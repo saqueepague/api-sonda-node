@@ -1,0 +1,21 @@
+{
+  "name": "sonda_saque_e_pague",
+  "version": "1.0.1",
+  "description": "Modelo_de_API_para_o_servio_de_sonda_da_Saque_e_Pague",
+  "license": "Unlicense",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha --recursive"
+  },
+  "browser": {
+    "fs": false
+  },
+  "dependencies": {
+    "superagent": "3.7.0"
+  },
+  "devDependencies": {
+    "mocha": "~2.3.4",
+    "sinon": "1.17.3",
+    "expect.js": "~0.3.1"
+  }
+}
