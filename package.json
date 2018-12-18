@@ -1,7 +1,7 @@
 {
   "name": "sonda_saque_e_pague",
-  "version": "1.0.1",
-  "description": "Modelo_de_API_para_o_servio_de_sonda_da_Saque_e_Pague",
+  "version": "1.0.2",
+  "description": "Modelo_de_API_para_o_servio_de_sonda_da_Saque_e_Pague_",
   "license": "Unlicense",
   "main": "src/index.js",
   "scripts": {

@@ -3,6 +3,6 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**status** | **String** | Status da transação nos sistemas da Saque e Pague (F - confirmada; C - cancelada; P - pendente) | [optional] 
+**status** | **String** | Status da transação nos sistemas da Saque e Pague (F &#x3D; confirmada, C &#x3D; cancelada, P &#x3D; pendente). | [optional] 
 
 

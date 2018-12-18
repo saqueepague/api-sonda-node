@@ -4,18 +4,23 @@ All URIs are relative to *https://localhost/saqueepague*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**getStatusUsingGET**](ActuatorControllerApi.md#getStatusUsingGET) | **GET** /actuator/health | getStatus
+[**actuatorHealthGet**](ActuatorControllerApi.md#actuatorHealthGet) | **GET** /actuator/health | Retorna o estado do serviço.
 
 
-<a name="getStatusUsingGET"></a>
-# **getStatusUsingGET**
-> {&#39;String&#39;: &#39;String&#39;} getStatusUsingGET()
+<a name="actuatorHealthGet"></a>
+# **actuatorHealthGet**
+> {&#39;String&#39;: &#39;String&#39;} actuatorHealthGet()
 
-getStatus
+Retorna o estado do serviço.
 
 ### Example
 ```javascript
 var SondaSaqueEPague = require('sonda_saque_e_pague');
+var defaultClient = SondaSaqueEPague.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: OAuth2
+var OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = 'YOUR ACCESS TOKEN';
 
 var apiInstance = new SondaSaqueEPague.ActuatorControllerApi();
 
@@ -26,7 +31,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.getStatusUsingGET(callback);
+apiInstance.actuatorHealthGet(callback);
 ```
 
 ### Parameters
@@ -38,7 +43,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-No authorization required
+[OAuth2](../README.md#OAuth2)
 
 ### HTTP request headers
 
