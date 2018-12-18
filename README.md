@@ -46,37 +46,6 @@ then install it via:
     npm install git+https://github.com/saqueepague/sdk-sonda-node --save
 ```
 
-### For browser
-
-The library also works in the browser environment via npm and [browserify](http://browserify.org/). After following
-the above steps with Node.js and installing browserify with `npm install -g browserify`,
-perform the following (assuming *main.js* is your entry file, that's to say your javascript file where you actually 
-use this library):
-
-```shell
-browserify main.js > bundle.js
-```
-
-Then include *bundle.js* in the HTML pages.
-
-### Webpack Configuration
-
-Using Webpack you may encounter the following error: "Module not found: Error:
-Cannot resolve module", most certainly you should disable AMD loader. Add/merge
-the following section to your webpack config:
-
-```javascript
-module: {
-  rules: [
-    {
-      parser: {
-        amd: false
-      }
-    }
-  ]
-}
-```
-
 ## Getting Started
 
 Please follow the [installation](#installation) instruction and execute the following JS code:
@@ -105,7 +74,7 @@ api.actuatorHealthGet(callback);
 
 ## Documentation for API Endpoints
 
-All URIs are relative to *https://localhost/saqueepague*
+All URIs are relative to *https://localhost/saqueepague*, the URL will be replaced for homologation purposes.
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
@@ -124,6 +93,7 @@ Class | Method | HTTP request | Description
 
 ## Documentation for Authorization
 
+The OAuth2 service URL will be changed for homologation purposes. While in the develop process it won't be available and won't be validated (but will be required) through the tryout requests in the developer portal.
 
 ### OAuth2
 
