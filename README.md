@@ -46,7 +46,7 @@ then install it via:
     npm install git+https://github.com/saqueepague/sdk-sonda-node --save
 ```
 
-#### For browser
+### For browser
 
 The library also works in the browser environment via npm and [browserify](http://browserify.org/). After following
 the above steps with Node.js and installing browserify with `npm install -g browserify`,
@@ -59,7 +59,7 @@ browserify main.js > bundle.js
 
 Then include *bundle.js* in the HTML pages.
 
-#### Webpack Configuration
+### Webpack Configuration
 
 Using Webpack you may encounter the following error: "Module not found: Error:
 Cannot resolve module", most certainly you should disable AMD loader. Add/merge
@@ -77,12 +77,18 @@ module: {
 }
 ```
 
-### Getting Started
+## Getting Started
 
 Please follow the [installation](#installation) instruction and execute the following JS code:
 
 ```javascript
 var SondaSaqueEPague = require('sonda_saque_e_pague');
+
+var defaultClient = SondaSaqueEPague.ApiClient.instance;
+
+// Configure OAuth2 access token for authorization: OAuth2
+var OAuth2 = defaultClient.authentications['OAuth2'];
+OAuth2.accessToken = "YOUR ACCESS TOKEN"
 
 var api = new SondaSaqueEPague.ActuatorControllerApi()
 
@@ -93,7 +99,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-api.getStatusUsingGET(callback);
+api.actuatorHealthGet(callback);
 
 ```
 
@@ -103,8 +109,8 @@ All URIs are relative to *https://localhost/saqueepague*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*SondaSaqueEPague.ActuatorControllerApi* | [**getStatusUsingGET**](docs/ActuatorControllerApi.md#getStatusUsingGET) | **GET** /actuator/health | getStatus
-*SondaSaqueEPague.SondaApiControllerApi* | [**sondaPostUsingPOST**](docs/SondaApiControllerApi.md#sondaPostUsingPOST) | **POST** /sonda | sondaPost
+*SondaSaqueEPague.ActuatorControllerApi* | [**actuatorHealthGet**](docs/ActuatorControllerApi.md#actuatorHealthGet) | **GET** /actuator/health | Retorna o estado do serviço.
+*SondaSaqueEPague.SondaApiControllerApi* | [**sondaPost**](docs/SondaApiControllerApi.md#sondaPost) | **POST** /sonda | Retorna o estado de uma transação.
 
 
 ## Documentation for Models
@@ -125,7 +131,4 @@ Class | Method | HTTP request | Description
 - **Flow**: accessCode
 - **Authorization URL**: https://127.0.0.1:3939/saqueepague/oauth
 - **Scopes**: 
-  - user: usuário operadora
-  - password: senha operadora
-  - grant_type: password
-
+  - read: Requisições podem somente ver os dados.
