@@ -1,8 +1,8 @@
-# SondaSaqueEPague.SondaResp
+# SaqueEPagueSonda.SondaResp
 
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**infTransacao** | [**SondaRespInfTransacao**](SondaRespInfTransacao.md) |  | [optional] 
+**infTransacao** | [**SondaRespInfTransacao**](SondaRespInfTransacao.md) |  | 
 
 

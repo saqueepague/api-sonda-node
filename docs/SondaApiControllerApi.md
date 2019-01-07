@@ -1,6 +1,6 @@
-# SondaSaqueEPague.SondaApiControllerApi
+# SaqueEPagueSonda.SondaApiControllerApi
 
-All URIs are relative to *https://localhost/saqueepague*
+All URIs are relative to *https://localhost/saqueepague-sonda/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -13,20 +13,20 @@ Method | HTTP request | Description
 
 Retorna o estado de uma transação.
 
-Serviço de consulta da sonda.
+Procura o último estado conhecido de uma transação específica dos últimos 7 dias (casos que a sonda pode tentar verificar em finais de semana ou feriado).
 
 ### Example
 ```javascript
-var SondaSaqueEPague = require('sonda_saque_e_pague');
-var defaultClient = SondaSaqueEPague.ApiClient.instance;
+var SaqueEPagueSonda = require('saque_e_pague_sonda');
+var defaultClient = SaqueEPagueSonda.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: OAuth2
 var OAuth2 = defaultClient.authentications['OAuth2'];
 OAuth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new SondaSaqueEPague.SondaApiControllerApi();
+var apiInstance = new SaqueEPagueSonda.SondaApiControllerApi();
 
-var sondaReq = new SondaSaqueEPague.SondaReq(); // SondaReq | Requisição de sonda de transação.
+var sondaReq = new SaqueEPagueSonda.SondaReq(); // SondaReq | Objeto com dados de procura da transação.
 
 
 var callback = function(error, data, response) {
@@ -43,7 +43,7 @@ apiInstance.sondaPost(sondaReq, callback);
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **sondaReq** | [**SondaReq**](SondaReq.md)| Requisição de sonda de transação. | 
+ **sondaReq** | [**SondaReq**](SondaReq.md)| Objeto com dados de procura da transação. | 
 
 ### Return type
 

@@ -1,7 +1,7 @@
 {
-  "name": "sonda_saque_e_pague",
-  "version": "1.0.2",
-  "description": "Modelo_de_API_para_o_servio_de_sonda_da_Saque_e_Pague_",
+  "name": "saque_e_pague_sonda",
+  "version": "1.1.0-sw2",
+  "description": "Modelo_de_API_para_o_servio_de_sonda_da_Saque_e_Pague__Parceiro_pode_requisitar_o_ltimo_estado_de_uma_transao__cancelada_confirmada_ou_pendente_atravs_das_chamadas_desta_API__Caso_no_encontre_a_transao_o_servio_retorna_o_estado_pendente_",
   "license": "Unlicense",
   "main": "src/index.js",
   "scripts": {

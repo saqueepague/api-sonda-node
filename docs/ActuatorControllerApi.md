@@ -1,6 +1,6 @@
-# SondaSaqueEPague.ActuatorControllerApi
+# SaqueEPagueSonda.ActuatorControllerApi
 
-All URIs are relative to *https://localhost/saqueepague*
+All URIs are relative to *https://localhost/saqueepague-sonda/v1*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -13,16 +13,18 @@ Method | HTTP request | Description
 
 Retorna o estado do serviço.
 
+Verifica a disponibilidade do serviço de sonda.
+
 ### Example
 ```javascript
-var SondaSaqueEPague = require('sonda_saque_e_pague');
-var defaultClient = SondaSaqueEPague.ApiClient.instance;
+var SaqueEPagueSonda = require('saque_e_pague_sonda');
+var defaultClient = SaqueEPagueSonda.ApiClient.instance;
 
 // Configure OAuth2 access token for authorization: OAuth2
 var OAuth2 = defaultClient.authentications['OAuth2'];
 OAuth2.accessToken = 'YOUR ACCESS TOKEN';
 
-var apiInstance = new SondaSaqueEPague.ActuatorControllerApi();
+var apiInstance = new SaqueEPagueSonda.ActuatorControllerApi();
 
 var callback = function(error, data, response) {
   if (error) {
