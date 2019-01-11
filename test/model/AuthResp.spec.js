@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SaqueEPagueSonda.SondaReqTerminal();
+    instance = new SaqueEPagueSonda.AuthResp();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,16 +49,28 @@
       object[property] = value;
   }
 
-  describe('SondaReqTerminal', function() {
-    it('should create an instance of SondaReqTerminal', function() {
-      // uncomment below and update the code to test SondaReqTerminal
-      //var instance = new SaqueEPagueSonda.SondaReqTerminal();
-      //expect(instance).to.be.a(SaqueEPagueSonda.SondaReqTerminal);
+  describe('AuthResp', function() {
+    it('should create an instance of AuthResp', function() {
+      // uncomment below and update the code to test AuthResp
+      //var instance = new SaqueEPagueSonda.AuthResp();
+      //expect(instance).to.be.a(SaqueEPagueSonda.AuthResp);
     });
 
-    it('should have the property codEstab (base name: "codEstab")', function() {
-      // uncomment below and update the code to test the property codEstab
-      //var instance = new SaqueEPagueSonda.SondaReqTerminal();
+    it('should have the property accessToken (base name: "access_token")', function() {
+      // uncomment below and update the code to test the property accessToken
+      //var instance = new SaqueEPagueSonda.AuthResp();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property expiresIn (base name: "expires_in")', function() {
+      // uncomment below and update the code to test the property expiresIn
+      //var instance = new SaqueEPagueSonda.AuthResp();
+      //expect(instance).to.be();
+    });
+
+    it('should have the property tokenType (base name: "token_type")', function() {
+      // uncomment below and update the code to test the property tokenType
+      //var instance = new SaqueEPagueSonda.AuthResp();
       //expect(instance).to.be();
     });
 

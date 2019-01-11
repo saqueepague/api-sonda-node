@@ -1,15 +1,15 @@
 # SaqueEPagueSonda.SondaApiControllerApi
 
-All URIs are relative to *https://localhost/saqueepague-sonda/v1*
+All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**sondaPost**](SondaApiControllerApi.md#sondaPost) | **POST** /sonda | Retorna o estado de uma transação.
+[**saqueepagueSondaPost**](SondaApiControllerApi.md#saqueepagueSondaPost) | **POST** /saqueepague/sonda | Retorna o estado de uma transação.
 
 
-<a name="sondaPost"></a>
-# **sondaPost**
-> SondaResp sondaPost(sondaReq)
+<a name="saqueepagueSondaPost"></a>
+# **saqueepagueSondaPost**
+> SondaResp saqueepagueSondaPost(sondaReq)
 
 Retorna o estado de uma transação.
 
@@ -36,7 +36,7 @@ var callback = function(error, data, response) {
     console.log('API called successfully. Returned data: ' + data);
   }
 };
-apiInstance.sondaPost(sondaReq, callback);
+apiInstance.saqueepagueSondaPost(sondaReq, callback);
 ```
 
 ### Parameters

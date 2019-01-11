@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**infTransacao** | [**SondaReqInfTransacao**](SondaReqInfTransacao.md) |  | 
+**infTransacao** | [**SondaReqTransacao**](SondaReqTransacao.md) |  | 
 **terminal** | [**SondaReqTerminal**](SondaReqTerminal.md) |  | 
 
 

@@ -30,7 +30,7 @@
   var instance;
 
   beforeEach(function() {
-    instance = new SaqueEPagueSonda.SondaReqTerminal();
+    instance = new SaqueEPagueSonda.SondaRespTransacao();
   });
 
   var getProperty = function(object, getter, property) {
@@ -49,16 +49,16 @@
       object[property] = value;
   }
 
-  describe('SondaReqTerminal', function() {
-    it('should create an instance of SondaReqTerminal', function() {
-      // uncomment below and update the code to test SondaReqTerminal
-      //var instance = new SaqueEPagueSonda.SondaReqTerminal();
-      //expect(instance).to.be.a(SaqueEPagueSonda.SondaReqTerminal);
+  describe('SondaRespTransacao', function() {
+    it('should create an instance of SondaRespTransacao', function() {
+      // uncomment below and update the code to test SondaRespTransacao
+      //var instance = new SaqueEPagueSonda.SondaRespTransacao();
+      //expect(instance).to.be.a(SaqueEPagueSonda.SondaRespTransacao);
     });
 
-    it('should have the property codEstab (base name: "codEstab")', function() {
-      // uncomment below and update the code to test the property codEstab
-      //var instance = new SaqueEPagueSonda.SondaReqTerminal();
+    it('should have the property status (base name: "status")', function() {
+      // uncomment below and update the code to test the property status
+      //var instance = new SaqueEPagueSonda.SondaRespTransacao();
       //expect(instance).to.be();
     });
 

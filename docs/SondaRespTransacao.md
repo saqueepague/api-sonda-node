@@ -1,4 +1,4 @@
-# SaqueEPagueSonda.SondaRespInfTransacao
+# SaqueEPagueSonda.SondaRespTransacao
 
 ## Properties
 Name | Type | Description | Notes

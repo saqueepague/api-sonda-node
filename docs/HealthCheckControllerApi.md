@@ -1,10 +1,10 @@
-# SaqueEPagueSonda.ActuatorControllerApi
+# SaqueEPagueSonda.HealthCheckControllerApi
 
-All URIs are relative to *https://localhost/saqueepague-sonda/v1*
+All URIs are relative to *https://localhost*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**actuatorHealthGet**](ActuatorControllerApi.md#actuatorHealthGet) | **GET** /actuator/health | Retorna o estado do serviço.
+[**actuatorHealthGet**](HealthCheckControllerApi.md#actuatorHealthGet) | **GET** /actuator/health | Retorna o estado do serviço.
 
 
 <a name="actuatorHealthGet"></a>
@@ -18,13 +18,8 @@ Verifica a disponibilidade do serviço de sonda.
 ### Example
 ```javascript
 var SaqueEPagueSonda = require('saque_e_pague_sonda');
-var defaultClient = SaqueEPagueSonda.ApiClient.instance;
 
-// Configure OAuth2 access token for authorization: OAuth2
-var OAuth2 = defaultClient.authentications['OAuth2'];
-OAuth2.accessToken = 'YOUR ACCESS TOKEN';
-
-var apiInstance = new SaqueEPagueSonda.ActuatorControllerApi();
+var apiInstance = new SaqueEPagueSonda.HealthCheckControllerApi();
 
 var callback = function(error, data, response) {
   if (error) {
@@ -45,7 +40,7 @@ This endpoint does not need any parameter.
 
 ### Authorization
 
-[OAuth2](../README.md#OAuth2)
+No authorization required
 
 ### HTTP request headers
 
